@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Movie } from '../model/movie';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Response } from '../model/response';
 
 @Injectable({
     providedIn: 'root'
@@ -9,7 +11,7 @@ export class MovieService {
 
     movies: Movie[];
 
-    constructor() {
+    constructor(private http: HttpClient) {
         this.movies = [
             new Movie('碟中谍6：全面瓦解', {
                 small: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg',
@@ -38,7 +40,8 @@ export class MovieService {
         ];
     }
 
-    getMovies(): Observable<Movie[]> {
-        return of(this.movies);
+    getMovies(): Observable<Response> {
+        let url = 'https://douban.uieee.com/v2/movie/in_theaters';
+        return this.http.get<Response>(url);
     }
 }

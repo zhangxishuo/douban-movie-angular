@@ -19,7 +19,7 @@ export class MovieGroupComponent implements OnInit {
 
     getMovies(): void {
         this.movieService.getMovies()
-            .subscribe(movies => this.movies = movies);
+            .subscribe(data => this.movies = data.subjects);
     }
 
 }
