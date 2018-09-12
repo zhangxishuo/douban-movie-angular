@@ -16,10 +16,30 @@ export class MovieService {
                 large: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg',
                 'medium': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg'
             }),
+            new Movie('勇敢往事', {
+                small: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2524173793.jpg',
+                large: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2524173793.jpg',
+                'medium': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2524173793.jpg'
+            }),
             new Movie('碟中谍6：全面瓦解', {
                 small: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg',
                 large: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg',
                 'medium': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg'
+            }),
+            new Movie('勇敢往事', {
+                small: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2524173793.jpg',
+                large: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2524173793.jpg',
+                'medium': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2524173793.jpg'
+            }),
+            new Movie('碟中谍6：全面瓦解', {
+                small: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg',
+                large: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg',
+                'medium': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg'
+            }),
+            new Movie('勇敢往事', {
+                small: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2524173793.jpg',
+                large: 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2524173793.jpg',
+                'medium': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2524173793.jpg'
             })
         ];
     }
