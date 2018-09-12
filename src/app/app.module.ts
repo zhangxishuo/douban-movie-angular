@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatCardModule, MatGridList, MatGridListModule } from '@angular/material';
+import { MatCardModule, MatGridList, MatGridListModule, MatIconModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { MovieGroupComponent } from './component/movie-group/movie-group.component';
@@ -17,7 +17,8 @@ import { MovieStarComponent } from './component/movie-star/movie-star.component'
     imports: [
         BrowserModule,
         MatCardModule,
-        MatGridListModule
+        MatGridListModule,
+        MatIconModule
     ],
     providers: [],
     bootstrap: [AppComponent]

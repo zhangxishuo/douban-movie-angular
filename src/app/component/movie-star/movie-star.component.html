@@ -1,3 +1,9 @@
-<p>
-  movie-star works!
-</p>
+<span *ngIf="grade !== 0">
+    <i *ngFor="let star of starArray" class="material-icons">star</i>
+    <i *ngFor="let starHalf of starHalfArray" class="material-icons">star_half</i>
+    <i *ngFor="let starHalf of starBorderArray" class="material-icons">star_border</i>
+    {{ grade }}
+</span>
+<span *ngIf="grade === 0">
+    暂无评分
+</span>
