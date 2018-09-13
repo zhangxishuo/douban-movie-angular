@@ -16,6 +16,7 @@ import { SearchComponent } from './component/search/search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './component/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MovieDetailComponent } from './component/movie-detail/movie-detail.component';
 
 @NgModule({
     declarations: [
@@ -28,7 +29,8 @@ import { AppRoutingModule } from './app-routing.module';
         TypePipe,
         MenuComponent,
         SearchComponent,
-        FooterComponent
+        FooterComponent,
+        MovieDetailComponent
     ],
     imports: [
         BrowserModule,
