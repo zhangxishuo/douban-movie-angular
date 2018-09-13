@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatGridListModule, MatIconModule, MatButtonModule, MatToolbarModule, MatButtonToggleModule, MatInputModule } from '@angular/material';
+import { MatCardModule, MatGridListModule, MatIconModule, MatButtonModule, MatToolbarModule, MatButtonToggleModule, MatInputModule, MatAutocompleteModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { MovieGroupComponent } from './component/movie-group/movie-group.component';
@@ -13,7 +13,7 @@ import { LeadingRolePipe } from './pipe/leading-role.pipe';
 import { TypePipe } from './pipe/type.pipe';
 import { MenuComponent } from './component/menu/menu.component';
 import { SearchComponent } from './component/search/search.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -38,7 +38,9 @@ import { FormsModule } from '@angular/forms';
         MatButtonModule,
         MatButtonToggleModule,
         MatToolbarModule,
-        MatInputModule
+        MatInputModule,
+        MatAutocompleteModule,
+        ReactiveFormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
