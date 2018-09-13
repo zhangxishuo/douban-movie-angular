@@ -1,13 +1,13 @@
+import { Director } from "./director";
+
 export class Movie {
     public title: string;
     public images: object;
     public rating: object;
+    public genres: string[];
+    public mainland_pubdate: string;
+    public directors: Director[];
 
-    constructor(title: string,
-                images: object,
-                rating: object) {
-        this.title = title;
-        this.images = images;
-        this.rating = rating;
+    constructor() {
     }
 }

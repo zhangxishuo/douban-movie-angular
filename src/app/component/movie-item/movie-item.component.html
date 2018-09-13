@@ -7,10 +7,9 @@
     </mat-card-header>
     <img mat-card-image [src]="movie.images.small">
     <mat-card-content>
-        <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-        </p>
+        <p>上映时间：{{ movie.mainland_pubdate | date : 'yyyy年MM月dd日' }}</p>
+        <p>类型: {{ movie.genres | type }}</p>
+        <p>导演: {{ movie.directors | director }}</p>
+        <p>主演: {{ movie.casts | leadingRole }}</p>
     </mat-card-content>
 </mat-card>

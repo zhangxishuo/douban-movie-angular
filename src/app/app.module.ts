@@ -7,13 +7,19 @@ import { MovieGroupComponent } from './component/movie-group/movie-group.compone
 import { MovieItemComponent } from './component/movie-item/movie-item.component';
 import { MovieStarComponent } from './component/movie-star/movie-star.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DirectorPipe } from './pipe/director.pipe';
+import { LeadingRolePipe } from './pipe/leading-role.pipe';
+import { TypePipe } from './pipe/type.pipe';
 
 @NgModule({
     declarations: [
         AppComponent,
         MovieGroupComponent,
         MovieItemComponent,
-        MovieStarComponent
+        MovieStarComponent,
+        DirectorPipe,
+        LeadingRolePipe,
+        TypePipe
     ],
     imports: [
         BrowserModule,
