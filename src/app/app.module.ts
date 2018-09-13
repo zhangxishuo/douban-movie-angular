@@ -15,6 +15,7 @@ import { MenuComponent } from './component/menu/menu.component';
 import { SearchComponent } from './component/search/search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './component/footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
     declarations: [
@@ -42,7 +43,8 @@ import { FooterComponent } from './component/footer/footer.component';
         MatToolbarModule,
         MatInputModule,
         MatAutocompleteModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        AppRoutingModule
     ],
     providers: [],
     bootstrap: [AppComponent]
