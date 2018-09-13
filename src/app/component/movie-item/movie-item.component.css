@@ -1,6 +1,11 @@
 .example-card {
     width: 240px;
-    height: 597px;
+    height: 620px;
+}
+
+.moreInfo {
+    position: absolute;
+    bottom: 20px;
 }
 
 img {
