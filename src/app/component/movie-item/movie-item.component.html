@@ -11,6 +11,6 @@
         <p>类型: {{ movie.genres | type }}</p>
         <p>导演: {{ movie.directors | director }}</p>
         <p>主演: {{ movie.casts | leadingRole }}</p>
-        <button class="moreInfo" mat-raised-button color="primary">Primary</button>
+        <a routerLink="/movie/{{ movie.id }}" class="moreInfo" mat-raised-button color="primary">查看详情</a>
     </mat-card-content>
 </mat-card>

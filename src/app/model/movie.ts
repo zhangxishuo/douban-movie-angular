@@ -1,6 +1,7 @@
 import { Director } from "./director";
 
 export class Movie {
+    public id: string;
     public title: string;
     public images: object;
     public rating: object;
