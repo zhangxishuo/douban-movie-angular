@@ -14,6 +14,7 @@ import { TypePipe } from './pipe/type.pipe';
 import { MenuComponent } from './component/menu/menu.component';
 import { SearchComponent } from './component/search/search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         LeadingRolePipe,
         TypePipe,
         MenuComponent,
-        SearchComponent
+        SearchComponent,
+        FooterComponent
     ],
     imports: [
         BrowserModule,
