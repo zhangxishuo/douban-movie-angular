@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatCardModule, MatGridListModule, MatIconModule, MatButtonModule, MatToolbarModule, MatButtonToggleModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule, MatGridListModule, MatIconModule, MatButtonModule, MatToolbarModule, MatButtonToggleModule, MatInputModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { MovieGroupComponent } from './component/movie-group/movie-group.component';
@@ -11,6 +12,8 @@ import { DirectorPipe } from './pipe/director.pipe';
 import { LeadingRolePipe } from './pipe/leading-role.pipe';
 import { TypePipe } from './pipe/type.pipe';
 import { MenuComponent } from './component/menu/menu.component';
+import { SearchComponent } from './component/search/search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -21,17 +24,21 @@ import { MenuComponent } from './component/menu/menu.component';
         DirectorPipe,
         LeadingRolePipe,
         TypePipe,
-        MenuComponent
+        MenuComponent,
+        SearchComponent
     ],
     imports: [
         BrowserModule,
+        FormsModule,
         HttpClientModule,
+        BrowserAnimationsModule,
         MatCardModule,
         MatGridListModule,
         MatIconModule,
         MatButtonModule,
         MatButtonToggleModule,
-        MatToolbarModule
+        MatToolbarModule,
+        MatInputModule
     ],
     providers: [],
     bootstrap: [AppComponent]
