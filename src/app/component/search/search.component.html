@@ -3,8 +3,8 @@
         <mat-form-field class="example-form-field">
             <input matInput type="text" placeholder="搜索" [formControl]="myControl" [matAutocomplete]="auto" />
             <mat-autocomplete #auto="matAutocomplete">
-                <mat-option *ngFor="let option of options" [value]="option">
-                    {{option}}
+                <mat-option *ngFor="let option of options; let num = index;" [value]="option">
+                    {{ num + 1 + '  ' + option }}
                 </mat-option>
             </mat-autocomplete>
             <button mat-flat-button matSuffix aria-label="Clear" (click)="value=''">
