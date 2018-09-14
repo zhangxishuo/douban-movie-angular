@@ -13,6 +13,10 @@ export class MovieService {
 
     baseUrl: string;
 
+    commonData: {
+        movieName: string
+    };
+
     constructor(private http: HttpClient) {
         // this.baseUrl = 'https://api.douban.com/v2/movie/';
         this.baseUrl = 'https://douban.uieee.com/v2/movie/';

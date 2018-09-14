@@ -10,13 +10,13 @@ import { Movie } from '../../model/movie';
 })
 export class SearchComponent implements OnInit {
 
-    value = '';
-    myControl = new FormControl();
+    control = new FormControl();
     options: string[];
 
     constructor(private movieService: MovieService) { }
 
     ngOnInit() {
+        this.control.setValue('');
         this.getTop10Name();
     }
 
@@ -38,6 +38,11 @@ export class SearchComponent implements OnInit {
             movieNames.push(movie.title);
         })
         return movieNames;
+    }
+
+    searchMovie(): void {
+        this.options = [];
+        console.log(this.control.value);
     }
 
 }
