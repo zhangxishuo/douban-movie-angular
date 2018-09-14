@@ -14,7 +14,8 @@ export class MovieService {
     baseUrl: string;
 
     constructor(private http: HttpClient) {
-        this.baseUrl = 'https://api.douban.com/v2/movie/';
+        // this.baseUrl = 'https://api.douban.com/v2/movie/';
+        this.baseUrl = 'https://douban.uieee.com/v2/movie/';
     }
 
     getMovies(): Observable<Response> {
@@ -25,5 +26,10 @@ export class MovieService {
     getTop250(): Observable<Response> {
         let url = this.baseUrl + 'top250';
         return this.http.get<Response>(url);
+    }
+
+    getMovieById(id: string): Observable<Movie> {
+        let url = this.baseUrl + 'subject/' + id;
+        return this.http.get<Movie>(url);
     }
 }
