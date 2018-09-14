@@ -8,6 +8,9 @@ export class Movie {
     public genres: string[];
     public mainland_pubdate: string;
     public directors: Director[];
+    public summary: string;
+    public website: string;
+    public languages: string[];
 
     constructor() {
     }
