@@ -3,3 +3,4 @@
         <app-movie-item [movie]="movie"></app-movie-item>
     </mat-grid-tile>
 </mat-grid-list>
+<mat-spinner class="center" *ngIf="!movies"></mat-spinner>

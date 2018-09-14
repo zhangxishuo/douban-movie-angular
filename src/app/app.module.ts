@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatGridListModule, MatIconModule, MatButtonModule, MatToolbarModule, MatButtonToggleModule, MatInputModule, MatAutocompleteModule } from '@angular/material';
+import { MatCardModule, MatGridListModule, MatIconModule, MatButtonModule, MatToolbarModule, MatButtonToggleModule, MatInputModule, MatAutocompleteModule, MatProgressSpinnerModule } from '@angular/material';
 
 import { EchartsNg2Module } from 'echarts-ng2';
 import { AppComponent } from './app.component';
@@ -48,7 +48,8 @@ import { MovieDetailComponent } from './component/movie-detail/movie-detail.comp
         MatAutocompleteModule,
         ReactiveFormsModule,
         AppRoutingModule,
-        EchartsNg2Module
+        EchartsNg2Module,
+        MatProgressSpinnerModule
     ],
     providers: [],
     bootstrap: [AppComponent]

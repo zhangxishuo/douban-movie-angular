@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.center {
+    margin: auto;
+}
+
 img {
     width: 240px;
     height: 354px;
